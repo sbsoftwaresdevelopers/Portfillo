@@ -1,0 +1,103 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background: linear-gradient(135deg,#667eea,#764ba2);
+animation: fadeIn 1.5s ease;
+}
+
+/* Form container */
+
+form{
+background:rgba(255,255,255,0.15);
+padding:40px;
+border-radius:20px;
+backdrop-filter: blur(10px);
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+width:320px;
+text-align:center;
+animation: slideUp 1s ease;
+}
+
+/* Heading */
+
+h4{
+font-size:24px;
+margin-bottom:20px;
+color:white;
+letter-spacing:1px;
+}
+
+/* Inputs */
+
+input,textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:none;
+outline:none;
+border-radius:10px;
+font-size:14px;
+transition:0.3s;
+}
+
+/* Input focus animation */
+
+input:focus,textarea:focus{
+transform:scale(1.05);
+box-shadow:0 0 10px #ffffff;
+}
+
+/* Textarea size */
+
+textarea{
+height:80px;
+resize:none;
+}
+
+/* Submit button */
+
+input[type="submit"]{
+background:#ff4b2b;
+color:white;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+input[type="submit"]:hover{
+background:#ffd700;
+color:black;
+transform:scale(1.1);
+box-shadow:0 0 15px #ffd700;
+}
+
+/* Animations */
+
+@keyframes fadeIn{
+from{
+opacity:0;
+}
+to{
+opacity:1;
+}
+}
+
+@keyframes slideUp{
+from{
+transform:translateY(50px);
+opacity:0;
+}
+to{
+transform:translateY(0);
+opacity:1;
+}
+}

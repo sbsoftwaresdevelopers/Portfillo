@@ -1,0 +1,123 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+text-align:center;
+padding:50px;
+animation: fadeIn 1.5s ease;
+}
+
+/* Heading */
+
+h1{
+font-size:40px;
+letter-spacing:3px;
+margin-bottom:20px;
+animation: slideDown 1s ease;
+}
+
+h3{
+margin-top:20px;
+font-size:22px;
+color:#00ffff;
+}
+
+/* Instagram link */
+
+a{
+text-decoration:none;
+color:white;
+background:#ff416c;
+padding:12px 25px;
+border-radius:25px;
+display:inline-block;
+margin-top:15px;
+font-weight:bold;
+transition:0.4s;
+}
+
+a:hover{
+background:#ffd700;
+color:black;
+transform:scale(1.1);
+box-shadow:0 0 15px #ffd700;
+}
+
+/* Company Title */
+
+b h1{
+margin-top:40px;
+color:#ffd700;
+}
+body{
+background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("image.png");
+background-size: cover;
+background-position: center;
+height: 100vh;
+}
+
+/* Image */
+
+img{
+margin-top:20px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+transition:0.4s;
+animation: float 3s infinite ease-in-out;
+}
+
+img:hover{
+transform:scale(1.1) rotate(3deg);
+box-shadow:0 10px 40px rgba(255,255,255,0.6);
+}
+
+/* Contact button */
+
+a[href="/index3.html"]{
+background:#00c6ff;
+margin-top:40px;
+}
+
+a[href="/index3.html"]:hover{
+background:#ffd700;
+}
+
+/* Animations */
+
+@keyframes fadeIn{
+from{
+opacity:0;
+}
+to{
+opacity:1;
+}
+}
+
+@keyframes slideDown{
+from{
+transform:translateY(-50px);
+opacity:0;
+}
+to{
+transform:translateY(0);
+opacity:1;
+}
+}
+
+@keyframes float{
+0%{
+transform:translateY(0px);
+}
+50%{
+transform:translateY(-10px);
+}
+100%{
+transform:translateY(0px);
+}
+}
